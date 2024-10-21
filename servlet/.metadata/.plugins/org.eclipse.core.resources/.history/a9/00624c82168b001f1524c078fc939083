@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+	<h1>INDEX FILE FOR SERVLET-1</h1>
+	<h2><a href="web">Servlet Interface implementing myservlet</a></h2>
+	<h2><a href="generic">GenericServlet extending myservlet</a></h2>
+</body>
+</html>

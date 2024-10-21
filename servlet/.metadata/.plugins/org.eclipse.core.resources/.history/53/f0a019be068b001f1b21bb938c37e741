@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+	<form action="web">
+		<h1>Click Me</h1>
+		<input type="submit">
+	</form>
+</body>
+</html>

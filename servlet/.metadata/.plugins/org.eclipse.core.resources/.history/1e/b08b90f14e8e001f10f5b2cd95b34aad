@@ -1,0 +1,7 @@
+package com.urlrewriing;
+
+import javax.servlet.http.HtttpServlet;
+
+public class Servlet1 extends HtttpServlet {
+
+}

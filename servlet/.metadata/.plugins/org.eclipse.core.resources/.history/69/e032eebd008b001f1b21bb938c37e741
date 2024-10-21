@@ -1,0 +1,29 @@
+package com.servlet.test;
+
+import javax.servlet.*;
+
+public class FirstServlet implements Servlet{
+
+	// Overriding life cycle methods
+	// Life cycle methods : init(ServletConfig) , service(ServletRequest req , ServletResponse res)
+	// And destroy()
+	
+	ServletConfig config;
+	
+	@Override
+	public void init(ServletConfig config) {
+		this.config = config;
+		System.out.println("Creating Object");
+	}
+	
+	@Override
+	public void service(ServletRequest req , ServletResponse res) {
+		
+	}
+	
+	@Override
+	public void destroy() {
+		config = null;
+		System.out.println("Releasing resources");
+	}
+}

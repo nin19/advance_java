@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Name Form</title>
+</head>
+<body>
+	<form action="servlet1" method="POST">
+		<input type="text" name="user_name" placeholder="Enter Your Name" />
+	</form>
+</body>
+</html>

@@ -1,0 +1,67 @@
+package com.user;
+
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.ServletException;
+import java.io.PrintWriter;
+import java.sql.DriverManager;
+import java.io.IOException;
+//import java.sql.DriverManager;
+//import java.sql.Connection;
+//import java.sql.PreparedStatement;
+import java.sql.*;
+
+
+public class Register extends HttpServlet {
+	
+	protected void doPost(HttpServletRequest req , HttpServletResponse res) throws ServletException , IOException{
+		res.setContentType("text/html;charset=UTF-8");
+		try (PrintWriter out = res.getWriter()){
+			out.println("<!DOCUMENT html>");
+			out.println("<html>");
+			out.println("<head>");
+			out.println("<title> Servlet Register </title>");
+			out.println("</head>");
+			out.println("<body>");
+			
+			// Fetching data from request
+			String name = req.getParameter("user_name");
+			String pass = req.getParameter("user_password");
+			String email = req.getParameter("user_email");
+			
+			if(name==null || pass==null || email==null) {
+				out.println("<h1>Mandatory Fields not entered </h1>");
+			}
+//			out.println("<h1>"+name+" "+pass+" "+email+" </h1>");
+			
+			//JDBC Connection
+			try {
+				Class.forName("com.mysql.jdbc.Driver");
+				
+				Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/register","root","Niraj@123");
+				
+				
+				String query = "INSERT INTO user VALUES(?,?,?)";
+				PreparedStatement ps = conn.prepareStatement(query);
+				
+				ps.setString(1,name);
+				ps.setString(2,pass);
+				ps.setString(3,email);
+				
+				ps.executeUpdate();
+				
+				out.println("<h1>Done.....</h1>");
+				
+				
+			}catch(ClassNotFoundException e) {
+				System.out.println("JDBC class didnt load");
+				return;
+			}catch(SQLException se) {
+				System.out.println("SQLException");
+				return;
+			}
+			out.println("</body>");
+		}
+	}
+}

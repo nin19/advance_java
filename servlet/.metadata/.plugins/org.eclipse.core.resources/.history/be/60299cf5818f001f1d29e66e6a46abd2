@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome page</title>
+</head>
+<body>
+	<h1>Welcome to our website</h1>
+	<h1>Please enter your name </h1>
+	<form action="servlet1">
+		<input type="text" placeholder="Enter name" name="name"/>
+		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>

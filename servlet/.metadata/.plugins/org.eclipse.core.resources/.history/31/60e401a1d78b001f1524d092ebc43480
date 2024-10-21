@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Page</title>
+</head>
+<body>
+	<div class="container">
+		<h1>My Form</h1>
+		
+		<form action="formServlet" method="post">
+			<table>
+				<tr>
+					<td>Enter your name :</td>
+					<td><input type="text" name="user_name" placeholder="Enter name"/></td>
+				</tr>
+				<tr>
+					<td>Enter password :</td>
+					<td><input type="password" name="user_password" placeholder="Enter password"/></td>
+				</tr>
+				
+			</table>
+			
+		</form>
+	</div>
+</body>
+</html>

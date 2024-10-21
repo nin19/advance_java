@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Page</title>
+</head>
+<body>
+	<div class="container">
+		<h1>My Form</h1>
+		
+		<form action="formServlet" method="post">
+			<table>
+				<tr>
+					<td>Enter your name :</td>
+					<td><input type="text" name="user_name" placeholder="Enter name"/></td>
+				</tr>
+				<tr>
+					<td>Enter password :</td>
+					<td><input type="password" name="user_password" placeholder="Enter password"/></td>
+				</tr>
+				<tr>
+					<td>Enter email :</td>
+					<td><input type="email" name="user_email" placeholder="Enter email-id" /></td>
+				</tr>
+				<tr>
+					<td>Select Gender :</td>
+					<td>
+						<input type="radio" name="user_gender" value="Male">Male &nbsp; &nbsp; <input type="radio" name="user_gender" value="Female" />Female
+					</td>
+				</tr>
+				<tr>
+					<td>Select Course :</td>
+					<td>
+						<select name="user_course">
+							<option value="Java">Java</option>
+							<option value="C">C</option>
+							<option value="Flutter">Flutter</option>
+							<option value="SpringBoot">SpringBoot</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" value="checked" name="condition"/></td>
+					<td>Agree Terms and conditions</td>
+				</tr>
+				
+			</table>
+			
+		</form>
+	</div>
+</body>
+</html>

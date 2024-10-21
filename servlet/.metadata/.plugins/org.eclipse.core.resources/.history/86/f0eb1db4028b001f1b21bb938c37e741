@@ -1,0 +1,44 @@
+package com.servlet.test;
+
+import javax.servlet.*;
+import java.io.IOException;
+
+public class FirstServlet implements Servlet{
+
+	// Overriding life cycle methods
+	// Life cycle methods : init(ServletConfig) , service(ServletRequest req , ServletResponse res)
+	// And destroy()
+	
+	ServletConfig config;
+	
+	@Override
+	public void init(ServletConfig config) {
+		this.config = config;
+		System.out.println("Creating Object");
+	}
+	
+	@Override
+	public void service(ServletRequest req , ServletResponse res) throws ServletException , IOException{
+		System.out.println("Servicing");
+	}
+	
+	@Override
+	public void destroy() {
+		config = null;
+		System.out.println("Releasing resources");
+	}
+	
+	// Non life cycle methods
+	// getServletConfig
+	// getServletInfo
+	
+	@Override
+	public ServletConfig getServletConfig() {
+		return config;
+	}
+	
+	@Override
+	public String getServletInfo() {
+		return "This servlet is created by Niraj randhir";
+	}
+}

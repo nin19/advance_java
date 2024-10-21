@@ -1,0 +1,9 @@
+#Tomcat publish data
+#Mon Oct 21 13:30:38 IST 2024
+org.eclipse.jst.jee.server\:hidden=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\hidden
+org.eclipse.jst.jee.server\:register-module=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\register-module
+org.eclipse.jst.jee.server\:DemoApp=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\DemoApp
+org.eclipse.jst.jee.server\:FormServlet=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\FormServlet
+org.eclipse.jst.jee.server\:hidden_f_f=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\hidden_f_f
+org.eclipse.jst.jee.server\:Servlet-1=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\Servlet-1
+org.eclipse.jst.jee.server\:url-rewriting=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\url-rewriting

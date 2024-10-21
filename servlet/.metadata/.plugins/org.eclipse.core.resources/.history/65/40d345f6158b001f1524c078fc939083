@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <!--servlet Declaration-->
+  
+  <servlet>
+	  <servlet-name>first</servlet-name>
+	  <servlet-class>com.servlet.test.FirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	  <servlet-name>first</servlet-name>
+	  <url-pattern>/web</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>generic</servlet-name>
+	  <servlet-class>com.servlet.test.GenericServletDemo</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+	  <servlet-name>generic</servlet-name>
+	  <url-pattern>/generic</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
